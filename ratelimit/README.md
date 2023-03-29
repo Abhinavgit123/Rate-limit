@@ -37,12 +37,17 @@ To build and run the application you need to have Maven and JDK(preferably lates
 
 ### Scenario 1: When rate limiting for a user is accepted
 
+<img width="1065" alt="Screenshot 2023-03-29 at 4 30 58 PM" src="https://user-images.githubusercontent.com/129087199/228528804-9b29a1ea-1883-4de2-a8e8-bf98e6a2327e.png">
+
 
 ### Scenario 2: When rate limiting for a user is exceeded
+
+<img width="1049" alt="Screenshot 2023-03-29 at 4 31 45 PM" src="https://user-images.githubusercontent.com/129087199/228528903-65b422ad-57c1-4245-b0a4-c5cd74f40595.png">
 
 
 ### Scenario 3: When userid is not specified in the header
 
+<img width="1056" alt="Screenshot 2023-03-29 at 4 32 06 PM" src="https://user-images.githubusercontent.com/129087199/228528971-ee70bcea-8988-4475-82aa-033bcad57707.png">
 
 
 ## **Testing**
