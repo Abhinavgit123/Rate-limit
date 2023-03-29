@@ -52,10 +52,10 @@ public class RatelimitBusinessImpl {
             //Manage newly defined time periods.
             Long newCount = userRecords.getOrDefault(currentTimeWindow, new AtomicLong(0)).longValue() + 1;
             userRecords.put(currentTimeWindow, new AtomicLong(newCount));
-            log.debug("CurrentTimeWindow:" + currentTimeWindow +" Result:true "+ " Count:"+timeWindowCount);
+            log.debug("Request count for User " + username + " within limit. Count:"+timeWindowCount);
             return true;
         }
-             log.debug("Request limit exceeded for User " + username + " CurrentTimeWindow:" + currentTimeWindow +" Count:"+timeWindowCount);
+             log.debug("Request limit exceeded for User " + username + ". Count:"+timeWindowCount);
             throw new RatelimitException("Request limit exceeded for User ID " + username +".Please try again in sometime.");
     }
 
