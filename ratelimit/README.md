@@ -58,6 +58,8 @@ To build and run the application you need to have Maven and JDK(preferably lates
 
 This code implements rate limiting for a given username by limiting the number of requests made by the user within a specific time window.
 
+For eg: A user is permitted 10 requests per minute.If the user hits 5 requests between 0.00 and 0.20 minutes he is entitled to another 5 requests within the next 40 seconds or he will be allowed a total of 10 requests between 0.20 and 1.20 minutes.
+
 The limitcheck method checks if a user is allowed to make a request or not by calling isRatelimitAllowed method.
 If the user is a new user, then it creates a new record for the user and allows the user to make a request. 
 Otherwise, it checks the existing user record and verifies whether the user has exceeded the rate limit or not.
