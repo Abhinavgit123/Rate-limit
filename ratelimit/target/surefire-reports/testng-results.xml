@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-29T11:43:00Z" name="Surefire suite" finished-at="2023-03-29T11:43:00Z" duration-ms="589">
+    <groups>
+    </groups>
+    <test started-at="2023-03-29T11:43:00Z" name="Surefire test" finished-at="2023-03-29T11:43:00Z" duration-ms="589">
+      <class name="com.project.ratelimit.business.RatelimitBusinessImplTests">
+        <test-method signature="RateLimitExceededScenario()[pri:0, instance:com.project.ratelimit.business.RatelimitBusinessImplTests@5ed828d]" started-at="2023-03-29T17:13:00Z" name="RateLimitExceededScenario" finished-at="2023-03-29T17:13:00Z" duration-ms="284" status="PASS">
+          <exception class="com.project.ratelimit.exception.RatelimitException">
+            <message>
+              <![CDATA[Request limit exceeded for User ID Pedri.Please try again in sometime.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.project.ratelimit.exception.RatelimitException: Request limit exceeded for User ID Pedri.Please try again in sometime.
+	at com.project.ratelimit.business.RatelimitBusinessImpl.isRatelimitAllowed(RatelimitBusinessImpl.java:59)
+	at com.project.ratelimit.business.RatelimitBusinessImpl.limitcheck(RatelimitBusinessImpl.java:43)
+	at com.project.ratelimit.business.RatelimitBusinessImplTests.RateLimitExceededScenario(RatelimitBusinessImplTests.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.project.ratelimit.exception.RatelimitException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RateLimitExceededScenario -->
+        <test-method signature="checkForNewUser()[pri:0, instance:com.project.ratelimit.business.RatelimitBusinessImplTests@5ed828d]" started-at="2023-03-29T17:13:00Z" name="checkForNewUser" finished-at="2023-03-29T17:13:00Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkForNewUser -->
+        <test-method signature="existingUsers()[pri:0, instance:com.project.ratelimit.business.RatelimitBusinessImplTests@5ed828d]" started-at="2023-03-29T17:13:00Z" name="existingUsers" finished-at="2023-03-29T17:13:00Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- existingUsers -->
+        <test-method signature="existingUsersEnterprise()[pri:0, instance:com.project.ratelimit.business.RatelimitBusinessImplTests@5ed828d]" started-at="2023-03-29T17:13:00Z" name="existingUsersEnterprise" finished-at="2023-03-29T17:13:00Z" duration-ms="267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- existingUsersEnterprise -->
+        <test-method signature="ifRatelimitExceededForUserOthersNotImpacted()[pri:0, instance:com.project.ratelimit.business.RatelimitBusinessImplTests@5ed828d]" started-at="2023-03-29T17:13:00Z" name="ifRatelimitExceededForUserOthersNotImpacted" finished-at="2023-03-29T17:13:00Z" duration-ms="9" status="PASS">
+          <exception class="com.project.ratelimit.exception.RatelimitException">
+            <message>
+              <![CDATA[Request limit exceeded for User ID Barca.Please try again in sometime.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.project.ratelimit.exception.RatelimitException: Request limit exceeded for User ID Barca.Please try again in sometime.
+	at com.project.ratelimit.business.RatelimitBusinessImpl.isRatelimitAllowed(RatelimitBusinessImpl.java:59)
+	at com.project.ratelimit.business.RatelimitBusinessImpl.limitcheck(RatelimitBusinessImpl.java:43)
+	at com.project.ratelimit.business.RatelimitBusinessImplTests.ifRatelimitExceededForUserOthersNotImpacted(RatelimitBusinessImplTests.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.project.ratelimit.exception.RatelimitException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ifRatelimitExceededForUserOthersNotImpacted -->
+      </class> <!-- com.project.ratelimit.business.RatelimitBusinessImplTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
