@@ -5,7 +5,7 @@ Rate limiter using sliding window method
 
 Change the following parameters in application.properties as per your need:
 
-There are three different categories for processing rate limiting.It is **assumed** that the application has Enterprise edition, community edition, free edition(Default) and thereby applying the necessary values for each edition.
+There are three different categories for processing rate limiting which can be modified in the **application.properties** file.It is **assumed** that the application has Enterprise edition, community edition, free edition(Default) and thereby applying the necessary values for each edition.
 
 1. **request.time.limit**: fixed time window (seconds) to apply rate limit.
 2. **request.counter**: Request count allowed in the fixed time window.
