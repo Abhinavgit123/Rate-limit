@@ -20,9 +20,9 @@ The values for the below parameters change according to the editions:
 
 ## **Deployment steps**
 
-To build and run the application you need to have Maven and JDK8(preferably latest version).
+To build and run the application you need to have Maven and JDK(preferably latest version).
 1. To build it, run the command: **mvn clean install** 
-2. Go to the target directory and run the command: **java -jar ratelimit-0.0.1-SNAPSHOT.jar**
+2. Go to the target directory and run the command: **java -jar ratelimit-0.0.1-SNAPSHOT.jar** (OR) Clone the project in IDE,configure and run the              application
 3. Send a POST request to http://localhost:8080/v1/ratelimit/limitcheck with the request header containing "userid" key,corresponding value and "edition" key,corresponding value (Note:"edition" is not a mandatory header,if not applicable it would be considered as free edition).
 
 
@@ -42,7 +42,6 @@ To build and run the application you need to have Maven and JDK8(preferably late
 
 
 ### Scenario 3: When userid is not specified in the header
-
 
 
 
